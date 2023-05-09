@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#dashnav{
+  position: relative;
+}
+
+.iadash{
+  display: none;
+  /* position: absolute; */
+  background-color: #f9f9f9;
+  overflow: auto;
+  margin: auto;
+  width: 97%;
+
+}
+.show1 {display:block;}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+</head>
+<body>
+
+<h1>HTML DOM Events</h1>
+<h2>The onclick Event</h2>
+
+<p>Click on the button to open the dropdown menu.</p>
+
+<div class="dropdown">
+  <button id="myBtn" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+    <!-- dashboard start. -->
+    <div>
+      <div class="dashboard"
+          style="width: 80%; margin: auto; margin-top: 20px; border:1px solid red; padding-bottom: 20px;">
+          <div style=" display:flex;  background-color: #337ab7;
+      justify-content:space-between;">
+              <p class="top">Hello</p>
+              <p class="top">NIE INSTITUTE OF TECHNOLOGY, MYSURU</p>
+              <P class="top">Log out</P>
+          </div>
+          <div id="dashnav">
+              <nav>
+                  <a href="">Dashboard</a>
+                  <button id="iabutton">Ia Marks Entry</button>
+
+                  <a href="" id="">Attendance</a>
+                  <button id="iabutton1">Additional/Improvement IA Entry</button>
+                  </nav>
+
+                      <!-- ia dashbord start -->
+          <div class="iadash" id="iadashb">
+            <div style=" border: .5px solid grey; background-color: #4286f4;justify-content: center; ">
+                <p style="display:flex; justify-content: center; ">INTERNAL MARKS ENTRY</p>
+            </div>
+            <div class="formia" style="background-color: #f5f5f5; ">
+                <div class="" style=" display:flex;
+            justify-content:space-between;">
+                    <p style="margin-left:4em;">Semester</p>
+                    <p>Subject Code</p>
+                    <p style="margin-right:4em;">Choose Faculty</p>
+                </div>
+                <div class="">
+                    <form action="#" method="POST" style="display: flex; justify-content: space-between;">
+                        <input name="semester"
+                            style=" border-radius: 5px; margin-left:2em; border: 1px solid #86807d;" required=""
+                            placeholder="student" type="text">
+                        <input name="subjectcode" style=" border-radius: 5px; border: 1px solid #86807d;"
+                            required="" placeholder="subjectcode" type="text">
+                        <input name="choosefaculty"
+                            style=" border-radius: 5px; margin-right:2em; border: 1px solid #86807d;" required=""
+                            placeholder="choose faculty" type="text">
+                    </form>
+                </div>
+                <div style="justify-content: center; display: flex;">
+                    <button style="width:25%; margin: auto; margin-top:1em; background-color: green;">Go
+                        Ahead</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+      
+<!-- ia dashbord end -->
+
+  <!-- Additional/Improvement IA Entry dashbord start -->
+    
+  <div class="iadash" id="iadashb1">
+    <div style=" border: .5px solid grey; background-color: #4286f4;justify-content: center; ">
+        <p style="display:flex; justify-content: center; ">Additional/ Improvement IA/ CIE Entry</p>
+    </div>
+    
+        <div class="">
+            <div class="formia" style="background-color: #f5f5f5; ">
+                <div class="" style=" display:flex;
+                    justify-content:space-between;">
+                    <p style="margin-left:4em;">Semester</p>
+                    <p>Subject Code</p>
+                    <p style="margin-right:4em;">Choose Faculty</p>
+                </div>
+            <form action="#" method="POST" style="display: flex; justify-content: space-between;">
+                <input name="semester" style=" border-radius: 5px; margin-left:2em; border: 1px solid #86807d;"
+                    required="" placeholder="student" type="text">
+                <input name="subjectcode" style=" border-radius: 5px; border: 1px solid #86807d;" required=""
+                    placeholder="subjectcode" type="text">
+                <input name="choosefaculty"
+                    style=" border-radius: 5px; margin-right:2em; border: 1px solid #86807d;" required=""
+                    placeholder="choose faculty" type="text">
+            </form>
+            <div class="formia" style="background-color: #f5f5f5; ">
+                <div class="" style=" display:flex;
+                    justify-content:space-between;">
+                    <p style="margin-left:4em;">Semester</p>
+                    <p>Subject Code</p>
+                    <p style="margin-right:4em;">Choose Faculty</p>
+                </div>
+            <form action="#" method="POST" style="display: flex; justify-content: space-between;">
+                <input name="semester" style=" border-radius: 5px; margin-left:2em; border: 1px solid #86807d;"
+                    required="" placeholder="student" type="text">
+                <input name="subjectcode" style=" border-radius: 5px; border: 1px solid #86807d;" required=""
+                    placeholder="subjectcode" type="text">
+                <input name="choosefaculty"
+                    style=" border-radius: 5px; margin-right:2em; border: 1px solid #86807d;" required=""
+                    placeholder="choose faculty" type="text">
+            </form>
+            <div class="formia" style="background-color: #f5f5f5; ">
+                <div class="" style=" display:flex;
+                    justify-content:space-between;">
+                    <p style="margin-left:4em;">Semester</p>
+                    <p>Subject Code</p>
+                    <p style="margin-right:4em;">Choose Faculty</p>
+                </div>
+            <form action="#" method="POST" style="display: flex; justify-content: space-between;">
+                <input name="semester" style=" border-radius: 5px; margin-left:2em; border: 1px solid #86807d;"
+                    required="" placeholder="student" type="text">
+                <input name="subjectcode" style=" border-radius: 5px; border: 1px solid #86807d;" required=""
+                    placeholder="subjectcode" type="text">
+                <input name="choosefaculty"
+                    style=" border-radius: 5px; margin-right:2em; border: 1px solid #86807d;" required=""
+                    placeholder="choose faculty" type="text">
+            </form>
+        </div>
+        <div style="justify-content: center; display: flex;">
+            <button style="width:25%; margin: auto; margin-top:1em; background-color: green;">Go Ahead</button>
+        </div>
+
+    </div>
+
+</div>
+</div> 
+
+</div>
+<!-- Additional/Improvement IA Entry dashbord end -->
+
+          </div>
+
+      
+
+  <!-- dashboard end. -->
+
+
+
+<script>
+  // Get the button, and when the user clicks on it, execute myFunction
+  document.getElementById("iabutton").onclick = function() {myFunction1()};
+  
+  /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+  function myFunction1() {
+    document.getElementById("iadashb").classList.toggle("show1");
+    document.getElementById("iadashb1").classList.remove("show1");
+
+  }
+  // Get the button, and when the user clicks on it, execute myFunction
+  document.getElementById("iabutton1").onclick = function() {myFunction2()};
+  
+  /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+  function myFunction2() {
+    document.getElementById("iadashb1").classList.toggle("show1");
+    document.getElementById("iadashb").classList.remove("show1");
+  }
+  </script>
+
+
+
+  <!-- <script>
+      let button1 = document.getElementById("iabutton");
+      let div1 = document.getElementsByClassName("iadashb")[0];
+
+      // Add a click event listener to the button
+      button1.addEventListener("click", function () {
+          // toggle the 'active' class on the div
+          div1.classList.toggle("show1");
+          div2.classList.remove("active");
+      });
+
+      let button2 = document.getElementById("iabutton1");
+      let div2 = document.getElementsByClassName("iadashb1")[0];
+
+      // Add a click event listener to the button
+      button2.addEventListener("click", function () {
+          // toggle the 'active' class on the div
+          div2.classList.toggle("active");
+          div1.classList.remove("active");
+      });
+  </script> -->
+
+<!-- <script>
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myBtn").onclick = function() {myFunction()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show"); -->
+}
+</script>
+
+</body>
+</html>

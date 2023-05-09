@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>IA Management System</title>
+</head>
+
+<body style="background-color:#fffcf48f;">
+
+    <div>
+
+
+            <!-- header -->
+            <header style="background-color: #222831;">
+                <div class="box" style="justify-content: space-between; display: flex; padding: 2rem 2rem 0 2rem;">
+                    <div style="display:inline-block;" class="logo">
+                        <img src="img/1.jpg" style="height: 100px; margin-top: 10px; margin-left: 30px;" alt="NIE">
+                    </div>
+                    <div style="display:inline-block;">
+                        <h2 style="color:white; margin-top: 10px;">
+                            NIE INSTITUTE OF TECHNOLOGY,MYSURU
+                            </h1>
+                            <h5 style="color:white;">
+                                No.50 (Part),Koorgalli village,Hootagalli Industrial Area,Mysuru-570018.
+                                </h3>
+                    </div>
+                    <a href="login.html" style="font-size:1.2rem ;padding: 2rem; color: white; padding-right:10px;">
+                      Log in 
+                    </a>
+                </div>
+            </header>
+    
+            <!-- header end -->
+        <!-- nabar  -->
+        <nav style="background-color: #222831  ;">
+            <div style="text-align: center; font-size: 1.2rem; font-weight: bold; color: rgb(255, 255, 255);">
+                IA Marks Application
+            </div>
+        </nav>
+        <!-- navbar end -->
+        <!-- nabar  -->
+        <nav class="nav" style="background-color:#222831; padding-left: 30px;">
+            <a href="#" style="font-size:1.2rem ; color: white; padding-right:10px;">Home |</a>
+            <a href="#" style="font-size:1.2rem ;color: white; padding-left: 10px;"> IA Marks |</a>
+        </nav>
+
+        <!-- navbar end -->
+
+    </div>
+    <div style="position: absolute;
+    width: 50%;
+    height: 35%;
+    top: 35%;    
+    left: 27%;
+    background: rgba(238, 238, 238, 0.4);
+    border: 0.5px solid #000000;
+    filter: blur(-2px);
+    backdrop-filter: blur(2px);
+    border-radius: 30px; z-index:1;">
+
+        <div class="form" style="z-index: 2;"></div>
+        <h3 style="text-align:center; margin: 10px;;">Log in</h3>
+
+        <form action="login.php" method="POST" style="text-align:center;">
+            <label><input type="radio" name="user_type" value="student" checked >Student</label>
+            <label><input type="radio" name="user_type" value="faculty" >Faculty</label>
+            <label><input type="radio" name="user_type" value="hod" >Hod</label>
+
+            <p style="margin-top:10px;">
+                Name <input name="name" style="margin-left: 31px; border-radius: 5px; border: 1px solid #86807d;" required="" placeholder="name" type="text">   </p>
+                <p style="margin-top:10px;">
+                    Username <input  name="username" style="border-radius: 5px; border: 1px solid #86807d;" required="" placeholder="username" type="text">           
+                </p>        
+            <p>
+
+
+                Password <input name="password" style="border-radius: 5px; border: 1px solid #86807d;" required="" placeholder="password" type="password">
+            </p>
+            <button style="border: 1px solid #86807d; border-radius: 5px;" type="submit" name="register">Log in</button>
+        </form>
+    </div>
+
+    <img src="img/2.jpg" class="img-fluid" alt="NIEIT">
+
+     <!-- footer beginAtZero -->
+    
+     <section >
+        <hr>
+        <div id="footer" style="display:flex; margin: 2rem; justify-content: space-between;">
+            <div style="text-align:center;" >  
+                <h3>Contact us</h3>
+                <p>admission@nieit.ac.in</p>
+                <p>08212-403733</p>
+            </div>
+            <div style="text-align:center;">
+                <p>No.50 (Part), Koorgalli village, Hootagalli </p>
+                <p>Industrial Area, Mysuru-570018.</p></p> 
+            </div> 
+            <div >
+                <p>https://nieit.ac.in/</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer beginAtZero -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
